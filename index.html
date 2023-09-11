@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function assign(){
+            var arg1 = document.getElementById("arg1");
+            var arg2 = document.getElementById("arg2");
+            var result = document.getElementById("result");
+            // arg1.value += " Entered ";
+            arg1.value = arg1.value+" Entered ";
+            arg2.value += " Entered ";
+            result.innerHTML = arg1.value + arg2.value;
+        }
+
+        function assign2(){
+            
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="arg1">
+    <input type="text" id="arg2">
+    <button onclick="assign()">click me</button>
+    <h3 id="result"></h3>
+</body>
+</html>
